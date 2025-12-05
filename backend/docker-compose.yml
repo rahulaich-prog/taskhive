@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  backend:
+    build: .
+    volumes:
+      - ./app:/app/app
+      - ./.env:/app/.env
+    ports:
+      - "8000:8000"
+    environment:
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_SERVICE_ROLE_KEY=${SUPABASE_SERVICE_ROLE_KEY}
+      - SUPABASE_ANON_KEY=${SUPABASE_ANON_KEY}
+      - APP_HOST=0.0.0.0
+      - APP_PORT=8000
