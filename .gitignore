@@ -7,3 +7,5 @@ backend/app/schemas/__pycache__
 backend/app/services/__pycache__
 backend/.env
 backend/logs/taskhive.log
+backend.zip
+frontend.zip
