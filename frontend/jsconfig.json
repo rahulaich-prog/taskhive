@@ -1,12 +1,12 @@
 {
-  "files": [],
+  "include": ["src/**/*"],
   "references": [
     
   ],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["frontend/src/*"]
     }
   }
 }
