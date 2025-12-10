@@ -41,7 +41,8 @@ app.middleware("http")(add_security_headers_middleware)
 # CORS — lock this down in production to your frontend origin(s)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # change to your frontend origin(s)
+    allow_origins=["http://localhost:3000","https://taskhive.shop",
+                   "https://www.taskhive.shop"],  # change to your frontend origin(s)
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
